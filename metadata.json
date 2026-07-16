@@ -1,0 +1,37 @@
+{
+  "team_id": "wasko_offline_health_ai",
+  "domain": "healthcare_medical",
+  "language_scope": ["en", "ha"],
+  "african_alpha_claim": true,
+  "budget_laptop_claim": true,
+  "submitter": {
+    "name": "Ahmad Muhammad",
+    "email": "presahmad@gmail.com",
+    "github_handle": "https://github.com/ahmad19844"
+  },
+  "cross_disciplinary_pairing": {
+    "discipline": "healthcare",
+    "load_bearing": true,
+    "description": "Providing offline AI-powered health education and medical question answering using a local language model and retrieval-augmented generation."
+  },
+  "test_prompts": [
+    {
+      "prompt_id": "tp_001",
+      "prompt": "what are the causes of cholera?"
+    },
+    {
+      "prompt_id": "tp_002",
+      "prompt": "mene bambanci tsakanin HIV da AIDS?"
+    }
+  ],
+  "model": {
+    "name": "TinyLlama-1.1B-Chat-v1.0.Q4_K_M",
+    "runtime": "llama.cpp",
+    "quantization": "GGUF Q4_K_M",
+    "parameters_estimate": "1.1B",
+    "packaging": "binary_bundle"
+  },
+  "_runtime": {
+    "model_path": "models/tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf"
+  }
+}
